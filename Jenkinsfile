@@ -3,6 +3,7 @@ node{
 	stage('maven isntall')
 	{
 		wget http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.zip
+		yum install unzip
 		unzip apache-maven-3.5.2-bin.zip
 		mv apache-maven-3.5.2/ /opt/maven
 		ln -s /opt/maven/bin/mvn /usr/bin/mvn
