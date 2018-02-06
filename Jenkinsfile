@@ -2,9 +2,9 @@ node{
  stages{
 	stage('maven isntall')
 	{
-		wget http://www.eng.lsu.edu/mirrors/apache/maven/maven-3/3.2.3/binaries/apache-maven-3.2.3-bin.zip
-		unzip apache-maven-3.2.3-bin.zip
-		mv apache-maven-3.2.3/ /opt/maven
+		wget http://www-eu.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.zip
+		unzip apache-maven-3.5.2-bin.zip
+		mv apache-maven-3.5.2/ /opt/maven
 		ln -s /opt/maven/bin/mvn /usr/bin/mvn
 		cd ~
 		echo '#!/bin/bash
@@ -25,4 +25,3 @@ node{
 		
 		}
 	}
-		
