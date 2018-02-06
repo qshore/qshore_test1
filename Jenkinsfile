@@ -1,6 +1,6 @@
 node('master'){
 	try{
-	stage('build'}
+	stage('build'){
 	{
 		checkout scm
 		ls
