@@ -1,16 +1,14 @@
-node('master'){
-	try{
-	stage('build'}
-	{
-		checkout scm
-		ls
-		systemctl status ansible
-	}
-	
-	catch{
-		
-	}
-	finally{}
-
-
+pipeline {
+    agent any
+    tools {
+        maven 'MAVEN_HOME' 
+    }
+    stages {
+        stage('Example') {
+            steps {
+                sh 'mvn --version'
+            }
+        }
+    }
 }
+
