@@ -10,7 +10,7 @@ echo "hello"
 post {
 always {
 echo "hello again"
-sh('buidl.sh')
+
         }
 success {
 mail(from: "heenashree2010@gmail.com", 
