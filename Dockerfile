@@ -6,7 +6,7 @@
  WORKDIR /test
 
 # Copy the current directory contents into the container at /test/
-# ADD localdir/ /test/
+ ADD test/ /test/
 
 RUN yum update -y
  RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
