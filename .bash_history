@@ -9,3 +9,5 @@ su root
 sudo su
 su sudo
 sudo su
+sudo du
+sudo su
